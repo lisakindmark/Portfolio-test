@@ -1,0 +1,391 @@
+/* Style divisons */
+body  {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(trianglify.svg);
+}
+
+.wrapper {
+  height: 100%;
+  padding: 5%;
+}
+.introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ align-items: center;
+ margin-bottom: 10%;
+ margin-top: 10%;
+
+}
+.usp { background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 30%;
+  padding: 20%;
+  padding-top:10%;
+  text-align: left;
+}
+
+/* Buttons & images */
+.buttonsticky {
+  background-color: #DA5552;
+  border: none;
+  color: white;
+  padding: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: 16px;
+  transition: transform .2s; /* Animation */
+  }
+.buttonsticky:hover {
+      transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.mainimage {
+    width: 20%;
+    padding: 5%;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+    justify-content: left;
+}
+.grid {
+   padding: 5%;
+   width: 75%;
+   align-items: center;
+   justify-content: center;
+   transition: transform .2s; /* Animation */
+ }
+ .grid:hover {
+     transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+ }
+
+ /*Flexbox*/
+
+
+.layout.horizontal,
+.layout.vertical {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.layout.horizontal {
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+.layout.vertical {
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.flex {
+  -ms-flex: 1 1 0.000000001px;
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-flex-basis: 0.000000001px;
+  flex-basis: 0.000000001px;
+}
+
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.box.blue {
+  background: #DF7373;
+  min-width: 50%;
+  display: flex;
+  align-items: column;
+  justify-content: center;
+}
+
+.div-box{
+    margin: 5%;
+    padding: 5%;
+  }
+
+.box.green {
+  background: #E4B1AB;
+  min-width: 50%;
+    max-height: 100%;
+}
+.box.yellow {
+  background: #CC444B;
+  min-width: 50%;
+  max-height: 100%;
+
+}
+.box.pink {
+  min-width: 50%;
+    max-height: 100%;
+  background: #E39695;
+}
+.box.orange {
+  min-width: 50%;
+  max-height: 100%;
+  background: #DA5552;
+}
+
+/* Text & Links */
+h1 {
+font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  font-weight: lighter;
+}
+h2 {
+font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-weight: lighter;
+}
+p {
+font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+li {
+font-family: 'Quicksand', sans-serif;
+      font-size: 14px;
+}
+
+.p-div{
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+
+  }
+
+.p-div-black{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+.h2-div  {
+  margin-top: 10%;
+  text-align: left;
+}
+
+a {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+
+/*Responsive*/
+@media (max-width: 600px) {
+
+.change-in-responsive.layout.horizontal {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .box {
+    text-align: center;
+  }
+  .box.blue {
+    background: #DF7373;
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+  .box.green {
+    background: #E4B1AB;
+    min-height: 50%;
+  }
+  .box.yellow {
+    background: #CC444B;
+    min-height: 50%;
+
+  }
+  .box.pink {
+    background: #E39695;
+    min-height: 50%;
+
+  }
+  .box.orange {
+    background: #DA5552;
+    min-height: 50%;
+
+  }
+
+.mainimage {
+        width: 50%;
+        padding: 5%;
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30%;
+
+    }
+
+.introduction {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+     align-items: center;
+    }
+
+.presentation {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttondiv{
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.buttonsticky {
+  background-color: #DA5552;
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 5%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 16px;
+  }
+
+  h1 {
+  font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+  h2 {
+  font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+  }
+  p {
+  font-family: 'Quicksand', sans-serif;
+      font-size: 14px;
+      font-weight: lighter;
+  }
+
+  .p-div{
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: left;
+
+    }
+
+  .p-div-black{
+      font-size: 12px;
+      line-height: 1.5;
+      text-align: left;
+    }
+
+}
+
+/*ipad*/
+
+@media (min-width: 600px) and (max-width: 1024px){
+
+  .change-in-responsive.layout.horizontal {
+      -ms-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .box {
+      text-align: center;
+    }
+    .box.blue {
+      background: #DF7373;
+      min-height: : 50%;
+
+    }
+
+    .box.green {
+      background: #E4B1AB;
+      min-height: 50%;
+    }
+    .box.yellow {
+      background: #CC444B;
+      min-height: 50%;
+    }
+    .box.pink {
+      min-height: 50%;
+      background: #E39695;
+    }
+    .box.orange {
+      min-height: 50%;
+      background: #DA5552;
+    }
+
+  .introduction {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       align-items: center;
+       margin-bottom: 5%;
+       margin-top: 5%;
+      }
+
+  .mainimage {
+      width: 30%;
+      border-top-left-radius: 50% 50%;
+      border-top-right-radius: 50% 50%;
+      border-bottom-right-radius: 50% 50%;
+      border-bottom-left-radius: 50% 50%;
+      justify-content: flex-start;
+      flex-direction: row;
+          }
+
+  .presentation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+  }
+
+  .usp {
+    padding: 10%;
+  }
+
+  .buttondiv{
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  .grid {
+     padding: 5%;
+     width: 50%;
+     align-items: center;
+     justify-content: center;
+   }
+
+
+}
